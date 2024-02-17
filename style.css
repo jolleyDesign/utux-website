@@ -1,7 +1,53 @@
-body {
-    background-image: linear-gradient(to top left, #E9B1B8, #07A7B6)
-}
-
 html {
     height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to top left, #E9B1B8, #07A7B6);
+    font-size: 16px;
+}
+
+.text {
+    color: white;
+    font-family: 'Inter';
+}
+
+section {
+    height: 90vh;
+    width: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 32px; */
+    padding: 16px;
+    gap: 16px;
+}
+
+button {
+    border-radius: 100px;
+    padding: 12px 32px;
+    font-size: 16px;
+    border: none;
+    gap: 8px;
+    font-weight: 500;
+    color: white;
+}
+
+.sign-up {
+    background-color:#E9B1B8;
+    letter-spacing: 0.1px;
+}
+
+.learn-more {
+    background-color: transparent;
+    border: 1px solid;
+    border-color: white;
 }
