@@ -6,7 +6,6 @@ body {
     background-image: linear-gradient(to top left, #E9B1B8, #07A7B6);
     font-size: 16px;
     font-family: 'Inter';
-
 }
 
 .text {
@@ -64,10 +63,11 @@ button {
     transition: all 0.1s ease-out;
 }
 
-.sign-up:hover {
+.sign-up:hover, .sign-up:focus {
     background-color: #F697A3;
     transition: all 0.1s ease-in-out;
     padding: 16px 36px;
+    outline: none;
 }
 
 .learn-more {
@@ -77,11 +77,13 @@ button {
     transition: all 0.1s ease-out;
 }
 
-.learn-more:hover {
-    background-color: #F697A3;
-    border-color: #F697A3;
+.learn-more:hover, .learn-more:focus {
+    background-color: white;
+    border-color: white;
+    color: black;
     transition: all 0.1s ease-in;
     padding: 16px 36px;
+    outline: none;
 }
 
 .text-content {
@@ -90,4 +92,35 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+input {
+    display: flex;
+    padding: 16px 16px;
+    border-radius: 16px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: white;
+    transition: all 0.2s ease;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+input::placeholder {
+    font-family: 'Inter';
+    color: white;
+}
+
+input:focus {
+    border: 3px solid #E9B1B8;
+    padding: 20px 20px;
+    transition: all 0.2s ease;
+    background-color: white;
+    color: black;
+}
+
+input:hover {
+    padding: 20px 20px;
+    transition: all 0.2s ease;
 }
