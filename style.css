@@ -5,11 +5,17 @@ html {
 body {
     background-image: linear-gradient(to top left, #E9B1B8, #07A7B6);
     font-size: 16px;
+    font-family: 'Inter';
+
 }
 
 .text {
     color: white;
-    font-family: 'Inter';
+}
+
+.info-text {
+    line-height: 25px;
+    color: white;
 }
 
 section {
@@ -31,6 +37,17 @@ section {
     gap: 16px;
 }
 
+.info-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 32px; */
+    padding: 16px;
+    gap: 16px;
+    text-align: center;
+}
+
 button {
     border-radius: 100px;
     padding: 12px 32px;
@@ -43,11 +60,34 @@ button {
 
 .sign-up {
     background-color:#E9B1B8;
-    letter-spacing: 0.1px;
+    letter-spacing: 1px;
+    transition: all 0.1s ease-out;
+}
+
+.sign-up:hover {
+    background-color: #F697A3;
+    transition: all 0.1s ease-in-out;
+    padding: 16px 36px;
 }
 
 .learn-more {
     background-color: transparent;
     border: 1px solid;
     border-color: white;
+    transition: all 0.1s ease-out;
+}
+
+.learn-more:hover {
+    background-color: #F697A3;
+    border-color: #F697A3;
+    transition: all 0.1s ease-in;
+    padding: 16px 36px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
