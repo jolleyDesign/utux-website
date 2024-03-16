@@ -1,0 +1,86 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to top left, #E9B1B8, #07A7B6);
+    font-size: 20px;
+    font-family: 'Inter';
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    color: white;
+}
+
+.signup {
+    flex: 1;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.email-submit {
+    flex: 1;
+    padding: 16px;
+    border-radius: 8px;
+    font-family: 'Inter';
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.email-submit::placeholder {
+    color: white;
+}
+
+input:focus {
+    border: 3px solid #E9B1B8;
+    padding: 20px 20px;
+    transition: all 0.2s ease;
+}
+
+input:hover {
+    padding: 20px 20px;
+    transition: all 0.2s ease;
+}
+
+button {
+    border-radius: 100px;
+    padding: 12px 32px;
+    font-size: 16px;
+    border: none;
+    gap: 8px;
+    font-weight: 500;
+    color: white;
+}
+.sign-up {
+    background-color:#E9B1B8;
+    letter-spacing: 1px;
+    transition: all 0.1s ease-out;
+}
+
+.sign-up:hover, .sign-up:focus {
+    background-color: #F697A3;
+    transition: all 0.1s ease-in-out;
+    padding: 16px 36px;
+    outline: none;
+}
