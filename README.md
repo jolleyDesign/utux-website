@@ -1,2 +1,2 @@
 # utUX website repo
-Building a website for Utah's local product & user experience group.
+Building a simple landing page for Utah's local product & user experience group.
